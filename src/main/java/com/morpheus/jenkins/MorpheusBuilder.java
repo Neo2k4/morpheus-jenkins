@@ -106,7 +106,7 @@ public class MorpheusBuilder extends Builder {
         } else {
             this.credentialsProvider = new BasicCredentialsProvider(this.username, this.password);
         }
-    	MorpheusClient client = new MorpheusClient(this.credentialsProvider).setEndpointUrl(this.applianceUrl).setSocketTimeout(172800);
+    	MorpheusClient client = new MorpheusClient(this.credentialsProvider).setEndpointUrl(this.applianceUrl).SOCKET_TIMEOUT(172800);
     	AppDeploy appDeploy = new AppDeploy();
         log.info("Performing Morpheus Deploy for {}", this.deploymentName);
     	try {
