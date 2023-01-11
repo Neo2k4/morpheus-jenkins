@@ -88,3 +88,5 @@ task checkDependencies() {
         }
     }
 }
+
+compileJava.dependsOn checkDependencies
